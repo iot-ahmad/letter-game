@@ -38,6 +38,6 @@ io.on('connection', (socket) => {
   registerGameHandlers(io, socket);
 });
 
-httpServer.listen(PORT, () => {
-  console.log(`السيرفر يعمل على http://localhost:${PORT}`);
+httpServer.listen(PORT, '0.0.0.0', () => {
+  console.log(`السيرفر يعمل على المنفذ ${PORT}`);
 });
